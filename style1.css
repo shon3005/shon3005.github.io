@@ -1,0 +1,119 @@
+body {
+	margin: 0 0 0 0;
+}
+
+video {
+	object-fit: fill;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
+	z-index: -1;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul li {
+	display: inline;
+	padding: 15px;
+}
+
+img {
+	margin-top: 80px;
+}
+
+.transBox {
+	position: fixed;
+	height: 65px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+	top: 0%;
+	color: #ffffff;
+	transition: background-color 0.4s;
+	border-bottom: none;
+}
+
+.videoContainer {	
+	position: relative;
+	height: 600px;
+}
+
+.container {
+	font-family: "Arial";
+	z-index: 1;
+}
+
+.greenButton {
+	background-color: #00c96d;
+	color: #ffffff;
+	width: 150px;
+	height: 40px;
+	font-size: 15px;
+	word-spacing: 5px;
+	right: 0%;
+	top: 0%;
+}
+
+.buttonStyle1 {
+	border: 0;
+	border-radius: 2px;
+	font-weight: bold;
+	position: fixed;
+	margin: 1%;
+	padding: 1%;
+}
+
+.transButton {
+	background-color: rgba(255,255,255,0.7);
+	margin-left: 44%;
+	margin-top: 30%;
+	width: 150px;
+	height: 40px;
+	top: 0%;
+	color: #ffffff;
+	font-family: "Arial";
+	font-size: 16px;
+	word-spacing: 5px;
+}
+
+.buttonStyle {
+	border: 0;
+	border-radius: 2px;
+	font-weight: bold;
+	position: absolute;
+}
+
+.header {
+	margin-top: 20%;
+	font-size: 60px;
+	font-weight: bold;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0%;
+	color: #ffffff;
+}
+
+.navBar {
+	font-size: 15px;
+	text-align: center;
+	position: relative;
+	margin: 1%;
+	padding: 1%;
+	top: 0%;
+}
+
+.projects {
+	text-align: center;
+}
+
+.alignRight {
+	margin-right: 40px;
+}
+
+.alignLeft {
+	margin-left: 40px;
+}

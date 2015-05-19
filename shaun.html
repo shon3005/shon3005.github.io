@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta char="utf-8">
+		<title>Shaun's Website</title>
+		<link rel="stylesheet" type="text/css" href="style1.css" media="screen">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div>
+			<div class="videoContainer">
+				<video autoplay muted>
+					<source src="coolvid.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div id="change">
+			</div>
+			<div class="transBox">
+				<ul class="navBar container">
+					<li>Portfolio</li>
+					<li>Research</li>
+					<li>Blog</li>
+					<li>Contact</li>
+				</ul>
+				<button class="container buttonStyle1 greenButton">Let's Chat!</button>
+			</div>
+			<div class="container">
+				<button class="buttonStyle transButton">About Me</button>
+				<h1 class="header">Shaun Chua</h1>
+			</div>
+			<div class="projects">
+				<a href="http://www.localizejs.com"><img src="chua_shaun_profile.jpg" alt="Picture" width="400" height="400" class="alignRight"></a>
+				<a href="http://gallatin.nyu.edu/"><img src="chua_shaun_profile.jpg" alt="Picture" width="400" height="400" class="alignLeft"></a>
+			</div>	
+			<div class="projects">
+				<a href="http://techatnyu.org/"><img src="chua_shaun_profile.jpg" alt="Picture" width="400" height="400" class="alignRight"></a>
+				<img src="chua_shaun_profile.jpg" alt="Picture" width="400" height="400" class="alignLeft">
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				var scroll_start = 0;
+   				var startchange = $('#change');
+   				var offset = startchange.offset();
+    			if (startchange.length){
+   					$(window).scroll(function() { 
+      					scroll_start = $(this).scrollTop();
+      					if(scroll_start > offset.top) {
+         					$(".transBox").css('background-color', "rgba(255,255,255,1");
+         					$('.transBox').css('color', "#000000");
+         					$('.transBox').css('border-bottom', "1px solid #ddd");
+       					} 
+       					else {
+          					$('.transBox').css('background-color', "rgba(0,0,0,0.4)");
+          					$('.transBox').css('transition', "background-color 1s");
+          					$('.transBox').css('color', "#ffffff");
+          					$('.transBox').css('border-bottom', "none");
+       					}
+       				});
+       			}
+			});
+		</script>
+	</body>
+</html>
